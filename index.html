@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Expenses chart component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <!-- <link rel="stylesheet" href="./styles/style.css" /> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <section id="balance" class="flex-row">
+        <div id="my-balance" class="text-white">
+          <p class="lead">My balance</p>
+          <p class="bold money">$921.48</p>
+        </div>
+        <div id="my-balance-icon">
+          <img src="./images/logo.svg" alt="Logo" />
+        </div>
+      </section>
+
+      <section id="spending">
+        <h4 class="text-dark-brown money">Spending - Last 7 days</h4>
+        <div id="my-spending">
+          <div class="weekday">
+            <div class="chart" data-chart="0"></div>
+            <p class="lead text-light-brown" data-weekday="mon">mon</p>
+          </div>
+          <div class="weekday">
+            <div class="chart" data-chart="1"></div>
+            <p class="lead text-light-brown" data-weekday="tue">tue</p>
+          </div>
+          <div class="weekday">
+            <div class="chart" data-chart="2"></div>
+            <p class="lead text-light-brown" data-weekday="wed">wed</p>
+          </div>
+          <div class="weekday">
+            <div class="chart" data-chart="3"></div>
+            <p class="lead text-light-brown" data-weekday="thu">thu</p>
+          </div>
+          <div class="weekday">
+            <div class="chart" data-chart="4"></div>
+            <p class="lead text-light-brown" data-weekday="fri">fri</p>
+          </div>
+          <div class="weekday">
+            <div class="chart" data-chart="5"></div>
+            <p class="lead text-light-brown" data-weekday="sat">sat</p>
+          </div>
+          <div class="weekday">
+            <div class="chart" data-chart="6"></div>
+            <p class="lead text-light-brown" data-weekday="sun">sun</p>
+          </div>
+        </div>
+
+        <hr class="separation-line" />
+
+        <section id="total">
+          <div>
+            <p class="lead text-light-brown">Total this month</p>
+            <p class="balance-info text-dark-brown money bold">$478.33</p>
+          </div>
+          <div id="total-info">
+            <p class="text-dark-brown bold" style="text-align: right">+2.4%</p>
+            <p class="lead text-light-brown">from last month</p>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <footer>
+      <script src="./dist/bundle.js"></script>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Criss Guinther</a>.
+      </div>
+    </footer>
+  </body>
+</html>

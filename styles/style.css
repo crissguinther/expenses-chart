@@ -1,0 +1,162 @@
+:root {
+  --cream: hsl(27, 66%, 92%);
+  --orange: hsl(10, 79%, 65%);
+  --light-brown: hsl(28, 10%, 53%);
+  --dark-brown: hsl(25, 47%, 15%);
+}
+
+/* Base styles */
+* {
+  margin: none;
+  padding: none;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  font-family: "DM Sans", sans-serif;
+  font-size: 18px;
+
+  background-color: var(--cream);
+}
+
+body > * {
+  width: 365px;
+}
+
+section {
+  padding: 20px 35px;
+  border-radius: 15px;
+
+  margin: 15px 0px;
+}
+
+.text-white {
+  color: white;
+}
+
+.text-dark-brown {
+  color: var(--dark-brown);
+}
+
+.text-light-brown {
+  color: var(--light-brown);
+}
+
+.lead {
+  font-size: 15px;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.money {
+  font-size: 24px;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.separation-line {
+  border-top: var(--cream);
+  border-radius: 15px;
+}
+
+.window-box {
+  position: absolute;
+  width: 72px;
+  height: 25px;
+  background-color: var(--dark-brown);
+  color: white;
+  font-weight: 700;
+  text-align: center;
+  border-radius: 5px;
+}
+/* End of base styles */
+
+/* Section styles */
+#balance {
+  background-color: var(--orange);
+}
+#spending {
+  border-radius: 15px;
+
+  background-color: #ffffff;
+}
+
+#total {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: space-between;
+  padding: 0px;
+}
+/* End of section styles */
+
+/* Div Styles */
+#my-balance {
+  align-items: center;
+}
+
+#my-balance p {
+  margin: 0;
+}
+
+#my-spending {
+  display: flex;
+  flex-direction: row;
+  min-height: 30vh;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+#total > div p {
+  margin: 0;
+}
+
+#total-info {
+  margin-top: 35px;
+}
+
+.chart {
+  justify-self: end;
+  transition: height 1s;
+  background-color: var(--orange);
+  border-radius: 5px;
+
+  cursor: pointer;
+}
+
+.weekday {
+  text-align: center;
+  width: 32px;
+  justify-self: end;
+}
+/* End of Div Styles */
+
+/* Attribution styles */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+/* End of Attribution styles */
+
+@media screen and (min-width: 1440px) {
+  body > * {
+    width: 600px;
+  }
+}
