@@ -1,5 +1,5 @@
 const fetchData = async (weekdays) => {
-  const data = await fetch("/expenses-chart/data.json");
+  const data = await fetch("https://crissguinther.github.io/expenses-chart/data.json");
   const text = await data.json();
   for (const entry of text) {
     for (const day of weekdays) {
